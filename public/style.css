@@ -5,6 +5,11 @@ body {
     font-family: Arial, sans-serif; /* Use a clean font */
     margin: 0;
     padding: 0;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
 }
 
 /* Header styles */
@@ -15,37 +20,29 @@ header {
     text-align: center;
 }
 
-/* Link styles */
-a {
-    color: gold; /* Gold links */
-    text-decoration: none; /* Remove underline */
+/* Form styles */
+form {
+    background-color: rgba(255, 215, 0, 0.1); /* Light gold background for form */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
-a:hover {
-    text-decoration: underline; /* Underline on hover */
+/* Input and button styles */
+input[type="file"] {
+    margin: 10px 0; /* Space around input */
 }
 
-/* Button styles */
 button {
     background-color: gold; /* Gold button background */
     color: black; /* Black button text */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px; /* Rounded corners for button */
 }
 
 button:hover {
     background-color: black; /* Black background on hover */
     color: gold; /* Gold text on hover */
-}
-
-/* Footer styles */
-footer {
-    background-color: gold; /* Gold background for footer */
-    color: black; /* Black text for footer */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
